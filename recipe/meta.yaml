@@ -11,7 +11,7 @@ source:
     - epsmonitorall.patch
 
 build:
-  number: 1017
+  number: 1018
   skip: true  # [win]
 
 requirements:
@@ -19,6 +19,7 @@ requirements:
     - cmake
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - make   # [unix]
   host:
